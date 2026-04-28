@@ -24,7 +24,7 @@
 
         {% for pokemon in pokemons %}
             <li class="list-group-item">
-                <a href="{% url 'pokemon_details'%}">{{ pokemon }}</a>
+                <a href="{% url 'pokemon_details' pokemon=pokemon %}">{{ pokemon }}</a>
             </li>
         {% endfor %}
 
